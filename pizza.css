@@ -1,0 +1,599 @@
+*{
+  margin: 0;
+  padding: 0;
+text-decoration: none;
+color: white;
+}
+body{
+  position: relative;
+
+}
+
+.allhead{
+background-color: rgb(37, 36, 36);
+  width: 100%;
+
+
+margin-bottom: 150px;
+padding: 20px;
+  
+}
+header{
+  display: flex;
+
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo span{
+font-size: 50px;
+}
+.logo img{
+  width: 30px;
+}
+.lista p:hover{
+  text-decoration: underline;
+  color: rgb(244, 209, 95);
+  cursor: pointer;
+}
+
+.list ul{
+  display: flex;
+  list-style: none;
+  gap:50px;
+}
+
+
+
+
+.list ul li a:hover{
+  text-decoration: underline;
+  color: rgb(244, 209, 95);
+  cursor: pointer;
+}
+.soicon .fa{
+margin-right: 20px;
+
+}
+.soicon .fa:hover{
+transform: translateY(-7px);
+color: rgb(244, 209, 95);
+  
+  }
+  .login a:hover{
+    text-decoration: underline;
+    color: rgb(244, 209, 95);
+    cursor: pointer;
+    
+  }
+
+  .lista{
+    position: relative;
+  }
+.list .lista .shop{
+background-color: white;
+width: 180px;
+border: 1px black solid;
+border-radius: 15px;
+position: absolute;
+top: 100%; /* Position below the parent element */
+left: 0;
+ display: none; 
+
+
+}
+.lista:hover .shop {
+  display: block;  /* Show the list when hovering over the parent */
+}
+
+.list .lista .shop li a{
+  font-size: 16px;
+  background-color: white;
+  color:black;
+  background-color: transparent;
+
+
+
+}
+.list .lista .shop li {
+  padding: 10px;
+  border: 1px black solid;
+  
+
+
+}
+.list .lista .shop li:hover{
+background-color: rgb(244, 209, 95);
+}
+.list .lista .shop li a:hover{
+text-decoration: none;
+
+  }
+
+  /*under head*/
+/*col1*/
+  .col2p{
+    width: 40%;
+    min-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+  }
+  
+  .under-head .col2p{
+margin-top: 150px;
+
+  }
+  .under-head .col2p img{
+    width:100px;
+    height: 100px;
+    animation-name: prasley;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+  }
+@keyframes prasley{
+  from{
+transform: translateX(100px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+.enjoy{
+  display: flex;
+}
+.enjoy h1{
+  
+  font-size: 95px;
+text-align: center;
+  z-index: 50;
+}
+
+.col2p .link{
+  text-align: center;
+  margin-top: 50px;
+
+
+}
+.col2p .link a{
+background-color: rgb(244, 209, 95);
+display: block;
+padding: 20px;
+width: 100px;
+margin: auto;
+border-radius: 30px;
+}
+
+
+.col2p .link a:hover{
+  background-color: rgb(76, 76, 75);
+
+  }
+/*underhead tag*/
+.under-head{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+/*col2*/
+
+.col2{
+  width: 40%;
+
+  min-width: 500px;
+  margin: au;
+  margin-top: 50px;  /* 100px top margin */
+  margin-left: auto;  /* Automatically adjusts left margin */
+  margin-right: auto; 
+}
+.mushroom{
+  animation-name: mush;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+.mushroom img{
+  width: 100px;
+}
+
+@keyframes mush{
+  from{
+    transform: translatey(30%);
+      }
+      to{
+        transform: translatey(10%);
+      }
+}
+.pizza{
+  text-align: center;
+
+}
+.pizza img{
+width: 80%;
+
+}
+.tomandp{
+  display: flex;
+gap:300px;
+justify-content: center;
+}
+
+.tomato{
+  animation-name: tom;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes tom{
+  from{
+    transform: translatex(0%);
+      }
+      to{
+        transform: translatex(20%);
+      }
+}
+.tomato img{
+  width: 100px;
+}
+.pepperoni img{
+  width: 100px;
+}
+.pepperoni{
+  animation-name: pep;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes pep{
+  from{
+    transform: translate(0%,50%);
+
+      }
+      to{
+        transform: translate(30%,0%);
+    
+      }
+}
+
+
+/*best saller*/
+
+.bestseller{
+
+  margin:auto;
+width: 80%;
+padding: 20px;
+
+}
+
+.bestseller .head h1{
+
+  font-size: 50px;
+  color:rgb(244, 209, 95);
+  }
+  .bestseller .head{
+  text-align: center;
+    background-color: rgb(249, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  gap:200px;
+  margin-bottom:100px ;
+  }
+  .bestseller .head img{
+    width:50px;
+  }
+  .pizzac{
+
+    animation-name: pizza1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pizza1{
+     0% {
+        transform: rotateZ(0deg) scale(1); /* Start with normal size and no rotation */
+      }
+      50% {
+        transform: rotateZ(180deg) scale(2); /* At halfway point, rotate 180° and double the size */
+      }
+      100% {
+        transform: rotateZ(360deg) scale(1); /* End with a full rotation and original size */
+      }
+  }
+
+
+.product img{
+  width:200px;
+height: 150px;
+border-radius: 50%;
+margin-top:20px;
+margin-bottom: 20px;
+
+}
+.products{
+position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,250px);
+  justify-content: center;
+  gap: 50px;
+}
+
+.product{
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+border-radius: 20px;
+text-align: center;
+position: relative;
+}
+
+.product::after{
+  content: '';  /* We need this for the pseudo-element */
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(255, 165, 0, 0); /* Start with no color */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;  /* Make the color change smooth */
+}
+
+.product:hover::after {
+  background-color: rgba(255, 165, 0, 0.4); /* Add orange color when hovered */
+
+}
+.product p{
+  margin-top:20px ;
+  color: black;
+}
+.product h2{
+  color: black;
+}
+.price{
+  font-size: 20px;
+  color: rgb(244, 209, 95);
+  margin-top:20px ;
+}
+.btn{
+  background-color: rgb(238, 170, 51);
+  width: 100px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  display: none;
+top:50;/* Position it within the container at the bottom */
+  left: 50%;
+  transform: translateX(-50%);  /* Center the button horizontally */
+  z-index: 2;
+
+
+}
+
+.product:hover .btn{
+  display: block;
+
+}
+.product:hover::after{
+  background-color: rgba(247, 226, 148, 0.655);
+}
+.btn:hover{
+background-color: black;
+}
+/*menu*/
+.menu{
+  margin-top: 100px;
+  background-color: rgb(22, 22, 22);
+
+  width: 100%;
+display: flex;
+gap:50px;
+flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 50px;
+}
+.firstcol{
+  width: 400px;
+height: 700px;
+
+  border: 5px solid  rgb(238, 170, 51);
+  border-radius: 20px;
+}
+.lastcol{
+  width: 400px;
+  height: 700px;
+  border: 5px solid  rgb(238, 170, 51);
+  border-radius: 20px;
+}
+.animimg img{
+width:500px;
+top: 0%;
+left: 0%;
+margin-bottom: 100px;
+animation-name: menuimg;
+
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes menuimg{
+from{
+transform: translatey(0px);
+}
+to{
+  transform: translatey(50px);
+}
+}
+
+.mid{
+  min-width: 500px;
+text-align: center;
+}
+.btn1{
+  background-color: rgb(238, 170, 51) ;
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.btn1 p{
+  font-size: 30px;
+}
+
+.pizzakinds{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pizzakind pre{
+  font-size: 20px;
+
+}
+.pizzakind pre:hover{
+color: rgb(237, 179, 70);
+cursor: pointer;
+}
+
+.pizzakind p{
+  font-size: 13px;
+  color: rgb(212, 216, 219);
+
+}
+.pizzakind{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.delivery{
+  margin-top: 200px;
+background-color:antiquewhite;
+padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:50px;
+}
+.delivery img{
+  width: 300px;
+}
+.imgd {
+
+  width: 700px;
+
+}
+.imgd img{
+  animation-name: delvierym;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes delvierym{
+from{
+  transform: translateX(0%);
+}
+to{
+  transform: translateX(170%);  
+}
+}
+.deliverp{
+
+  width:600px;
+  padding: 30px;
+  text-align: center;
+}
+.deliverp h1{
+  color:black;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.deliverp p{
+  color:black;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.deliverp .link{
+  background-color: orange;
+  width:150px;
+  margin: auto;
+padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+.deliverp .link:hover{
+  background-color: black;
+}
+.footer{
+  margin-top: 50px;
+
+
+  width: 100%;
+
+}
+
+.footer1{
+
+padding: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+
+}
+.customer h1 ,ul li{
+  color: black;
+  list-style: none;
+}
+.customer h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.customer ul li {
+
+  margin: 20px;
+}
+.customer1 h1 ,ul li{
+  color: black;
+  list-style: none;
+}
+.customer1 h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.customer1 ul li {
+
+  margin: 20px;
+}
+.customer{
+  width: 300px;
+
+}
+.customer1{
+  width: 500px;
+
+  text-align: center;
+
+border-left:1px black solid ;
+border-right:1px black solid ;
+  
+}
+.list2 a{
+  color:black;
+}
+.list2 a:hover{
+  color:rgb(242, 191, 97);
+}
+.list2 span{
+  color:black;
+}
